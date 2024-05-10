@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #76ddb6; /* Soft green background */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333; /* Dark grey color for the text */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+h1:hover {
+    color: #555; /* Slightly lighter grey on hover */
+}
+
+header {
+    color: #0e0d0d;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+header:hover {
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+}
+
+/* Style for the "Enter text" label */
+label[for="plainText"] {
+    font-weight: bold;
+    color: #4CAF50; /* Green color to match the button */
+    display: block; /* Ensure the label is on its own line */
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Style for the "Encrypt Text" label */
+label[for="returnText"] {
+    font-weight: bold;
+    color: #008CBA; /* Blue color to match the "Copy Text" button */
+    display: block; /* Ensure the label is on its own line */
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Styling for form inputs */
+input[type="text"],
+input[type="number"] {
+    padding: 8px; /* Reduced padding to minimize the height */
+    margin-bottom: 10px; /* Reduced margin for a more compact layout */
+    border: 2px solid #4CAF50; /* Stylish green border */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    width: calc(100% - 20px); /* Adjust width to account for border and padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Focus state for input boxes to enhance user experience */
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #008CBA; /* Change border color on focus */
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Enhancements for buttons */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and press effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:active {
+    transform: translateY(2px); /* Press effect */
+}
+
+/* Unique style for the copy button */
+#copyText {
+    background-color: #008CBA; /* Blue background */
+}
+
+#copyText:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
